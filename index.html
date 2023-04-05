@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="index.css">
+      <script src="index.js"></script>
+      <title>Calculadora JavaScript</title>
+
+
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="screen">
+        <input type="number" onkeydown="handleSolvePressed(event)" id="visualizer"></input>
+      </div>
+
+      <div class="calculadora_pad">
+          <div class="pad_numerico">
+            <button value="7" onclick="handleSelection(value)">7</button>
+            <button value="8" onclick="handleSelection(value)">8</button>
+            <button value="9" onclick="handleSelection(value)">9</button>
+            <button value="+" onclick="handleSelection(value)">+</button> 
+          </div>
+          <div class="pad_numerico">
+              <button value="4" onclick="handleSelection(value)">4</button>
+              <button value="5" onclick="handleSelection(value)">5</button>
+              <button value="6" onclick="handleSelection(value)">6</button>
+              <button value="-" onclick="handleSelection(value)">-</button> 
+          </div>
+          <div class="pad_numerico">
+            <button value="1" onclick="handleSelection(value)">1</button>
+            <button value="2" onclick="handleSelection(value)">2</button>
+            <button value="3" onclick="handleSelection(value)">3</button>
+            <button value="/" onclick="handleSelection(value)">/</button> 
+        </div>
+
+          <div class="pad_numerico">
+              <button value="0" onclick="handleSelection(value)">0</button>
+              <button value="." onclick="handleSelection(value)">.</button> 
+              <button id="ionicon"> 
+                <a href="https://github.com/carlostrevinobalboa">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>  
+              </button>
+              <button value="*" onclick="handleSelection(value)">*</button>
+          </div>
+          
+          <div class="pad_numerico_final">
+              <button onclick="handleClear()">LIMPIAR</button>
+              <button value="=" onclick="handleSolve()">=</button>
+          </div>
+      </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+
+</html>

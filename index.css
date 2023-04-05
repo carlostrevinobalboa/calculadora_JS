@@ -1,0 +1,86 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: slategrey;
+}
+
+.container{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(179, 177, 177);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+.container > * {
+    border-radius: 10px;
+}
+
+.screen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(179, 177, 177);
+}
+
+input{
+    width: 80%;
+    height: 60%;
+    text-align: end;
+    font-size: 30px;
+    color:rgb(10, 10, 141);
+    border-color: black;
+    border-radius: 10px; 
+    margin: 0;
+    background-color: rgb(67, 114, 73);
+}
+
+input:focus{
+    
+    border-color: black;
+}
+
+.calculadora_pad{
+    width: 100%;
+    background-color: rgb(179, 177, 177);
+}
+
+.pad_numerico{
+    display: flex;
+}
+
+button{  
+    color: black;
+    margin: 5px;
+    width: 90px;
+    height: 50px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+}
+
+
+.pad_numerico_final{
+    display: flex;
+}
+
+.pad_numerico_final > button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    flex: 1
+}
+
+#ionicon{
+    font-size: 30px;
+}
