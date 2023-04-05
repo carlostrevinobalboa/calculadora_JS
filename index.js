@@ -11,13 +11,4 @@ function handleSolve(){
     let result = eval(operation);
     handleClear();
     document.getElementById("visualizer").value += result;
-}
-
-function handleSolvePressed(event){
-    if(event.keyCode == 13){
-        handleSolve();
-    } 
-}
-
-
-    
+}    
